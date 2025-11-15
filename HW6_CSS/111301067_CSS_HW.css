@@ -1,0 +1,198 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 20px; 
+  font-family: Arial, sans-serif;
+  color: black;
+  line-height: 1.5;
+}
+
+.main-container {
+  width: 1000px;
+  max-width: 95%; 
+  
+  display: flex; 
+  
+  background-color: white;
+  
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px gray; 
+  
+  overflow: hidden; 
+}
+
+.left-panel {
+
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel {
+  width: 70%;
+  padding: 30px;
+}
+
+.photo-panel img {
+  width: 100%; 
+  display: block; 
+}
+.text-content {
+
+  background-color: purple;
+  color: white;
+  padding: 25px;
+  flex-grow: 1
+}
+
+
+.text-content h2 {
+  font-family: "Georgia", serif;
+  font-weight: normal;
+  font-size: 1.8em;
+  margin-top: 0;
+  border-bottom: 1px solid white; 
+  padding-bottom: 5px;
+}
+
+
+.text-content p {
+  margin: 10px 0;
+}
+
+.nccu-logo {
+  width: 100%; 
+  max-width: 150px; 
+  display: block; 
+  margin: 20px auto 0 auto; 
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+
+.section-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 20px;
+  
+
+  border-bottom: 2px solid lightgray; 
+  padding-bottom: 10px;
+}
+
+
+.education-item {
+  display: flex;
+}
+
+
+.year {
+  width: 25%; 
+  font-weight: bold;
+  color: black;
+}
+
+
+.description {
+  width: 75%; 
+  color: gray;
+}
+
+
+.tag {
+  display: inline-block; 
+  background-color: lightgray;
+  color: black;
+  padding: 5px 12px; 
+  border-radius: 15px; 
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+
+
+.hw-lab-container {
+  display: flex;
+  gap: 20px; 
+}
+
+.hw-column,
+.lab-column {
+  width: 50%; 
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hw-lab-container h3 {
+  margin-top: 0;
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+}
+
+.hw-lab-container ul {
+  list-style: none; /* */
+  padding-left: 0;
+  margin: 0;
+}
+
+
+.hw-lab-container a {
+  text-decoration: none;
+  color: purple; 
+  font-weight: bold;
+  display: block; 
+  padding: 5px 0; 
+}
+
+
+.hw-lab-container a:hover {
+  text-decoration: underline; /
+}
+
+.music-container {
+  display: flex;
+  justify-content: space-around; 
+  text-align: center; 
+}
+
+
+.music-item {
+  width: 20%; 
+  text-decoration: none; 
+  color: black;
+}
+
+
+.music-item img {
+  width: 100%;
+  max-width: 80px; 
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.music-item p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.music-note {
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic; 
+  color: gray;
+}
