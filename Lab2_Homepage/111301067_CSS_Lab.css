@@ -1,0 +1,117 @@
+
+body {
+  font-family: Arial, sans-serif;
+  color: black; 
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Georgia", serif; 
+  margin: 0;
+  font-size: 2.5em; 
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+/* --- 3. 導覽列 (Navbar) 樣式 --- */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: darkslategray; 
+  position: sticky; 
+  top: 0em; 
+  left: 0em; 
+  width: 100%; 
+}
+
+/* 導覽列中的清單項目 (li) */
+ul.navbar li {
+}
+
+ul.navbar li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+.dropdown {
+  position: relative; }
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px; 
+  text-decoration: none;
+  display: block; 
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.main-content {
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* --- 6. Media Queries --- */
+@media all {
+  body {
+    font-family: Arial, sans-serif;
+  }
+}
+
+@media print {
+
+  .header, ul.navbar {
+    display: none;
+  }
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  .main-content {
+    padding: 0;
+  }
+}
