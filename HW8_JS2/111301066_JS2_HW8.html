@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="111301067_JS2_HW8.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>JS Calculator</h1>
+
+        <label for="num1">Number 1</label>
+        <input type="number" id="num1">
+
+        <label for="num2">Number 2</label>
+        <input type="number" id="num2">
+
+        <label for="operator">Operate way?</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <button id="calcBtn" onclick="calculate()">Calculate</button>
+
+        <div class="result-area">
+            Result = <span id="result"></span>
+        </div>
+    </div>
+
+    <script src="111301067_JS2_HW8.js"></script>
+</body>
+</html>
